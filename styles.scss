@@ -4,11 +4,12 @@ body {
   background-color: $White;
   margin: 0px;
   font-family: "Poppins", serif;
+  padding: 0;
 }
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 19rem);
+  grid-template-columns: repeat(3, minmax(200px, 19rem));
   grid-template-rows: repeat(4, 13rem);
   gap: 2rem;
   height: 40rem;
@@ -38,7 +39,7 @@ body {
 }
 
 .infoTitle {
-  font-size: 1.1rem;
+  font-size: clamp(0.75rem, 1.5vw, 1.1rem);
   color: $GreyDark;
   font-weight: 500;
   margin: 0;
@@ -47,7 +48,7 @@ body {
 
 .infoTitleTwo {
   margin: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: $Grey;
   font-weight: 300;
 }
@@ -108,14 +109,14 @@ body {
 }
 
 .headingOne {
-  font-size: 2.1rem;
+  font-size: clamp(2rem, 2.5vw, 2.2rem);
   font-weight: 200;
   margin: 0;
   color: $Grey;
 }
 
 .headingTwo {
-  font-size: 2.1rem;
+  font-size: clamp(2rem, 2.5vw, 2.2rem);
   font-weight: 500;
   margin: 0;
   color: $GreyDark;
@@ -124,9 +125,115 @@ body {
 .description {
   text-align: center;
   color: $Grey;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 2.5vw, 0.8rem);
   margin: 0;
   font-weight: 400;
   margin-top: 10px;
   line-height: 130%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContainer {
+    // outline: 2px solid black;
+    width: 100%;
+    min-width: 425px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .parentContainer {
+    // outline: 2px solid blue;
+    width: 100%;
+    max-width: 320px;
+    //  margin: 0 auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informationContainer {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 2rem;
+    height: auto;
+    // outline: 2px solid black;
+    margin-bottom: 2rem;
+  }
+
+  .headingOne {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+  .headingTwo {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    margin-bottom: 10px;
+  }
+  .description {
+    text-align: center;
+    font-size: clamp(12px, 3vw, 16px);
+  }
+
+  .gridContainer {
+    // outline: 2px solid brown;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 150px;
+    width: 100%;
+    background-color: $White;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-item1 {
+    border-top: 4px solid $Cyan;
+    grid-row: 1 / 1;
+  }
+
+  .grid-item2 {
+    border-top: 4px solid $Red;
+    grid-row: 2 / 3;
+  }
+
+  .grid-item3 {
+    border-top: 4px solid $Orange;
+    grid-row: 3 /4;
+  }
+
+  .grid-item4 {
+    border-top: 4px solid $Blue;
+    grid-row: 4/ 4;
+  }
+
+  .infoTitle {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+
+  .infoTitleTwo {
+    font-size: clamp(0.5rem, 5vw, 0.8rem);
+  }
+
+  .iconsImage {
+    padding-top: 1.3rem;
+    width: 3rem
+    
+  }
 }
