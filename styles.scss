@@ -2,44 +2,131 @@
 
 body {
   background-color: $White;
+  margin: 0px;
+  font-family: "Poppins", serif;
 }
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 22rem);
-  grid-template-rows: repeat(4, 15rem);
-  gap: 3rem;
-  outline: 2px solid blueviolet;
-  height: 50rem;
-//   width: 30rem;
+  grid-template-columns: repeat(3, 19rem);
+  grid-template-rows: repeat(4, 13rem);
+  gap: 2rem;
+  height: 40rem;
+  width: 90rem;
   padding: 1rem;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
-//   margin: 0px;
 }
 
 .grid-item {
-  outline: 2px solid $Cyan;
-  height: 15rem;
-  width: 22rem;
-
+  display: flex;
+  flex-direction: column;
+  height: 13rem;
+  width: 19rem;
+  background-color: $White;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-.grid-item1{
-    grid-row: 1 / 5;
+.info {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1.2rem;
+  height: 4rem;
 }
 
-.grid-item2{
-    grid-row: 2 / 3;
+.infoTitle {
+  font-size: 1.1rem;
+  color: $GreyDark;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 4px;
 }
 
-.grid-item3{
-    grid-row: 3 /4;
+.infoTitleTwo {
+  margin: 0;
+  font-size: 12px;
+  color: $Grey;
+  font-weight: 300;
 }
 
-.grid-item4{
-    grid-row: 1/ 5;
+.icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1.8rem;
 }
 
+.iconsImage {
+  width: 3.5rem;
+}
+
+.grid-item1 {
+  border-top: 4px solid $Cyan;
+  grid-row: 1 / 5;
+}
+
+.grid-item2 {
+  border-top: 4px solid $Red;
+  grid-row: 2 / 3;
+}
+
+.grid-item3 {
+  border-top: 4px solid $Orange;
+  grid-row: 3 /4;
+}
+
+.grid-item4 {
+  border-top: 4px solid $Blue;
+  grid-row: 1/ 5;
+}
+
+.mainContainer {
+  height: auto;
+  display: flex;
+  padding: 1rem;
+  width: auto;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  margin-top: 2rem;
+}
+
+.headingOne {
+  font-size: 2.1rem;
+  font-weight: 200;
+  margin: 0;
+  color: $Grey;
+}
+
+.headingTwo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: $GreyDark;
+}
+
+.description {
+  text-align: center;
+  color: $Grey;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 130%;
+}
