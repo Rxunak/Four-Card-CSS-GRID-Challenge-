@@ -9,7 +9,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 19rem));
   grid-template-rows: repeat(4, 13rem);
-  gap: 2rem;
+  gap: 15px 30px;
   height: 40rem;
   width: 90rem;
   padding: 1rem;
@@ -238,6 +238,7 @@ body {
     font-size: clamp(0.6rem, 1.5vw, 0.8rem);
   }
   .gridContainer {
+    gap: clamp(1px, 1vw, 15px) clamp(20px, 4vw, 30px);
     width: 95%;
     height: 25rem;
     margin: 0 auto;
@@ -248,10 +249,10 @@ body {
     height: auto;
   }
   .infoTitle {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(0.6rem, 2.5vw, 1rem);
   }
   .infoTitleTwo {
-    font-size: clamp(0.1rem, 1.2vw, 1rem);
+    font-size: clamp(0.1rem, 1.2vw, 0.8rem);
   }
   .iconsImage {
     width: clamp(24px, 4vw, 48px);
