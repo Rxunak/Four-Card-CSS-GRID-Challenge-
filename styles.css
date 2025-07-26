@@ -217,4 +217,44 @@ body {
     padding-top: 1.3rem;
     width: 3rem;
   }
+}
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .parentContainer {
+    width: 100%;
+  }
+  .headingOne {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+  .headingTwo {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+  .description {
+    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  }
+  .gridContainer {
+    width: 95%;
+    height: 25rem;
+    margin: 0 auto;
+    padding-top: clamp(0.5rem, 3vw, 2rem);
+  }
+  .grid-item {
+    width: 100%;
+    height: auto;
+  }
+  .infoTitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
+  .infoTitleTwo {
+    font-size: clamp(0.1rem, 1.2vw, 1rem);
+  }
+  .iconsImage {
+    width: clamp(24px, 4vw, 48px);
+    height: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
